@@ -40,3 +40,4 @@ for i in range(0,7):
     if check == i+1:
       if main[i][j] == 1:
         print(j+1)
+##
