@@ -141,10 +141,17 @@ while True:
    a.set_gia_ban(gia)
    arr.append(a)
 print(arr[0].display_infor())
+"""
 with open("hanghoa.txt","w") as f:
    for i in arr:
       f.write(f"{i.get_ma_hang()},{i.get_ten_hang()},{i.get_so_luong()},{i.get_gia_ban()}\n")
 with open("hanghoa.txt","r") as f:
    for line in f:
       print(line)
-#
+"""
+with open("a.txt","w",encoding="utf-8") as f:
+   for i in arr:
+      f.write(f"{i.get_ma_hang()},{i.get_ten_hang()},{i.get_so_luong()},{i.get_gia_ban()}\n")
+with open("a.txt","r",encoding = "utf-8") as f:
+   for line in f:
+      print(line)
