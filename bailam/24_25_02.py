@@ -25,6 +25,7 @@ s = input("Nhap so nhi phan: ")
 if check_np(s) == True:
   print(sum_a(s))
 """
+"""
 def check_tin(a):
   count = 0
   result = ""
@@ -51,4 +52,34 @@ with open("hocphanCNTT.txt","w",encoding = "utf-8") as f:
   for i in arr:
     if check_tin(i["MaHP"]):
       f.write(f"{i["MaHP"]},{i["TenHP"]},{i["SoTC"]} \n")
-
+with open("hocphanCNTT.txt","r",encoding="utf-8") as f:
+  for i in f:
+    print(i)
+"""
+class HTRON:
+  def __init__(self,a,b,bk):
+    self.x = a
+    self.y = b
+    self.banKinh = bk
+  def nhap(self):
+    self.x = float(input("Nhap toa do x "))
+    self.y = float(input("Nhap toa do y "))
+    self.banKinh = float("Nhap ban kinh ")
+  def xuat(self):
+    print(f"Toa do x {self.x} ,Toa do y {self.y} , Ban kinh {self.banKinh}")
+  #setters
+  def set_x(self,a):
+    self.x = a
+  def set_y(self,b):
+    self.y = b
+  def set_bk(self,bk):
+    self.banKinh = bk
+  #getters
+  def get_x(self):
+    return self.x
+  def get_y(self):
+    return self.y
+  def get_bk(self):
+    return self.banKinh
+  def s_tron(self):
+    return (self.banKinh ** 2) * 3.14 
