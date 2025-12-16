@@ -1,0 +1,2 @@
+TIN001,Nguyen li he dieu hanh,3 
+TIN002,Nhap mon lap trinh,2 
